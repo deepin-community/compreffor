@@ -1,0 +1,26 @@
+Source: compreffor
+Section: devel
+Priority: optional
+Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+Uploaders: Jeremy Bicha <jbicha@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               cython3 (>= 0.28.4),
+               dh-python,
+               python3-all-dev,
+               python3-fonttools (>= 4.2.0),
+               python3-pytest <!nocheck>,
+               python3-setuptools
+Standards-Version: 4.5.1
+Homepage: https://github.com/googlei18n/compreffor
+Vcs-Git: https://salsa.debian.org/fonts-team/compreffor.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/compreffor
+
+Package: python3-compreffor
+Architecture: any
+Section: python
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends}
+Description: CFF table subroutinizer for FontTools
+ python3-compreffor is a tool to subroutinize a Compact Font Format (CFF)
+ OpenType font.

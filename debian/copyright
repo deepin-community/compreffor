@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: compreffor
+Source: https://github.com/googlei18n/compreffor
+
+Files:     *
+Copyright: 2015-2017 Google Inc.
+           2014-2015 Sam Fishman
+           2016-2017 Cosimo Lupo
+License:   Apache-2.0
+
+License:   Apache-2.0
+ Licensed under the Apache License, Version 2.0
+ https://www.apache.org/licenses/
+ .
+ On Debian systems, the complete text of the Apache License can be found in
+ /usr/share/common-licenses/Apache-2.0'.
