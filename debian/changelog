@@ -1,3 +1,38 @@
+compreffor (0.5.3-2) unstable; urgency=medium
+
+  * Team Upload.
+  * Cleanup _version.py in d/clean (Closes: #1026686)
+  * Bump Standards-Version to 4.6.2 (no changes needed)
+
+ -- Nilesh Patra <nilesh@debian.org>  Thu, 22 Dec 2022 00:35:10 +0530
+
+compreffor (0.5.3-1) unstable; urgency=medium
+
+  * Team Upload.
+  * d/watch: Use tags instead (for easy tracking w/ changed github API)
+  * New upstream version 0.5.3 (Closes: #1024010)
+  * Bump Standards-Version to 4.6.1 (no changes needed)
+  * Remove python-3.10.patch; merged upstream
+  * B-D on python3-setuptools-scm
+  * Remove setuptools_git_ls_files as hard dep
+
+ -- Nilesh Patra <nilesh@debian.org>  Wed, 16 Nov 2022 23:28:11 +0530
+
+compreffor (0.5.1-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Stefano Rivera ]
+  * Patch: Update collections.abc imports for Python 3.10 (Closes: #1000315)
+
+  [ Boyuan Yang ]
+  * debian/control: Bump Standards-Version to 4.6.0.
+
+  [ Yao Wei (魏銘廷) ]
+  * debian/watch: Change GitHub archive URL.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 21 Nov 2021 14:01:12 -0500
+
 compreffor (0.5.1-1) unstable; urgency=medium
 
   * Team upload
