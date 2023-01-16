@@ -1,0 +1,24 @@
+Description: Remove setuptools_git_ls_files as install-req as this is un-needed
+Author: Nilesh Patra <nilesh@debian.org>
+Last-Update: 2022-11-16
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -3,7 +3,6 @@
+     "setuptools",
+     "wheel",
+     "setuptools_scm",
+-    "setuptools_git_ls_files",
+     "cython",
+ ]
+ 
+--- a/setup.py
++++ b/setup.py
+@@ -152,7 +152,7 @@
+         'build_ext': custom_build_ext,
+     },
+     setup_requires=(
+-        ["setuptools_scm", "setuptools_git_ls_files"] + pytest_runner + wheel
++        ["setuptools_scm"] + pytest_runner + wheel
+     ),
+     tests_require=[
+         'pytest>=2.8',
