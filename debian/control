@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
 Uploaders: Jeremy Bicha <jbicha@debian.org>
 Build-Depends: debhelper-compat (= 13),
-               cython3 (>= 0.28.4),
+               cython3 (>= 3.0.2),
                dh-python,
                python3-all-dev,
                python3-fonttools (>= 4.2.0),
@@ -12,7 +12,7 @@ Build-Depends: debhelper-compat (= 13),
                python3-setuptools,
                python3-setuptools-scm
 Standards-Version: 4.6.2
-Homepage: https://github.com/googlei18n/compreffor
+Homepage: https://github.com/googlefonts/compreffor
 Vcs-Git: https://salsa.debian.org/fonts-team/compreffor.git
 Vcs-Browser: https://salsa.debian.org/fonts-team/compreffor
 

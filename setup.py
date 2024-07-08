@@ -16,7 +16,7 @@ wheel = ['wheel'] if needs_wheel else []
 
 
 # use Cython if available, else try use pre-generated .cpp sources
-cython_min_version = '0.29.30'
+cython_min_version = '3.0.2'
 try:
     pkg_resources.require("cython >= %s" % cython_min_version)
 except pkg_resources.ResolutionError:
@@ -26,7 +26,7 @@ except pkg_resources.ResolutionError:
 else:
     with_cython = True
     print('Development mode: Compiling Cython modules from .pyx sources.')
-    from Cython.Distutils import build_ext
+    from Cython.Distutils.old_build_ext import old_build_ext as build_ext
 
 
 class custom_build_ext(build_ext):
@@ -160,7 +160,7 @@ setup_params = dict(
     install_requires=[
         "fonttools>=4",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.8",
     entry_points={
         'console_scripts': [
             "compreffor = compreffor.__main__:main",
