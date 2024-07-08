@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: compreffor
-Source: https://github.com/googlei18n/compreffor
+Source: https://github.com/googlefonts/compreffor
 
 Files:     *
 Copyright: 2015-2017 Google Inc.
